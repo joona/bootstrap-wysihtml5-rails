@@ -10,7 +10,7 @@ task 'update' do
   
   system("rm -rf bootstrap-wysihtml5")
   system("git clone git://github.com/jhollingworth/bootstrap-wysihtml5.git")
-  
+    
   system("cp #{origin_src_path}/bootstrap-wysihtml5.css #{dest_css_path}/core.css")
   
   Dir.foreach("bootstrap-wysihtml5/src/locales") do |file|
